@@ -1,0 +1,39 @@
+
+<html>
+	<head></head>
+	<body>
+			
+			<script>
+				var str="hello world";
+				document.write(str.length);
+				document.write("<br></br>");
+			
+				document.write(str.charAt(3));
+				document.write("<br></br>");
+				
+				var result=str.concat(" Hyderabad "," Banglore "," Chennai");
+				document.write(result);
+				document.write("<br></br>");
+				
+				var result=str.match("abcd");
+				document.write(result);
+				document.write("<br></br>");
+						
+				var result2=str.substring(6,9);
+				document.write(result2);
+				document.write("<br></br>");
+				
+				var result1=str.replace("world","abcd");
+				document.write(result1);
+				document.write("<br></br>");
+				
+				var result4=str.italics().bold().fontcolor("red").fontsize(7);
+				document.write(result4);
+				document.write("<br></br>");
+				
+				var result3=str.toUpperCase();
+				document.write(result3);
+				document.write("<br></br>");
+			</script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+
+<html>
+	<head>
+		<script>
+			function f()
+			{
+				alert("Button clicked");
+			}
+		</script>
+		
+		<script type="text\javascript">	</script>
+		
+		<script>
+				function myFunc()
+				{
+					var name="capgemini";
+					alert(name+" , "+city);	
+				}
+				
+				function myFunc1()
+				{
+					alert(name+" , "+city);
+				}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+				document.write("Welcome to javascript <br></br>");	
+				document.write("<input type='button' value='Dynamic button'></input>")
+				
+				document.write("<br></br>");
+				var d=new Date("21 NOV,1990");
+				document.write(d);
+				
+				document.write("<br></br>");
+				var mil=d.getTime();
+				document.write(mil);
+				
+				document.write("<br></br>");
+				var newDate= new Date(mil);
+				var date=String(newDate);
+				document.write(date);
+				alert(date);
+		</script>
+		<br></br>
+		
+		<noscript>
+				Your browser does not support javascript
+		</noscript>
+		
+		
+		<button onclick="myFunc()">click me</button>
+		<button onclick="myFunc1()">click me 1</button>
+		
+	</body>
+</html>

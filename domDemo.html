@@ -1,0 +1,60 @@
+
+<html>
+	<head></head>
+	<body>
+		<script>
+				function myFunc()
+				{
+					var result=document.forms[0].user.value;
+					alert(result);
+				}
+				
+				function myFunc1()
+				{
+					var result=document.form[1].user.value;
+					alert(result);
+				}
+				function myFunc2()
+				{
+					 newwin=window.open(" ","my Window" ,width="200px" height="200px");
+				}
+				function myFunc3()
+				{
+					 newwin=moveBy(10,10);
+				}
+		</script>
+		<script>
+			var result=confirm("Do you want to continue");
+			alert(result);
+		</script>
+		
+		<script>
+			var result=prompt("Enter your Name");
+			alert(result);
+		</script>
+		
+		<script>
+			var result=prompt("Enter your Name");
+			document.write("welcome "+result);
+		</script>
+		
+		
+		<form name="form1">
+			userName:<input type="text" name="user"></input>
+		
+		</form>
+		<hr></hr>
+		<form name="form2">
+			user:<input type="text" name="user"></input>
+		</form>
+		
+		<button onclick="myFunc()">Click me</button>
+		<button onclick="myFunc1()">Click me 1</button>
+		
+		<button onclick="myFunc2()">open window</button>
+		<button onclick="myFunc3()">move window</button>
+		
+	
+	</body>
+
+</html>
