@@ -1,0 +1,34 @@
+
+<html>
+	
+	<head>
+		<title>
+			Working with external js
+		</title>
+		<script src="common.js"></script>
+		<script>
+			function display()
+			{
+				var headVar=10;
+				document.write("Script embedded in head Tag<br>-------------------------------<br>")
+				document.write("variable stored in headvar is"+headVar);
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			display();
+			var bodyVar=30;
+			document.write("<hr>Script Embedded in body tag<br>-------------------------</hr>")
+			document.write("<br>variable stored in bodyvar is" +bodyVar);
+		</script>
+		<script>
+			var headVar=10;
+			var bodyVar=30;
+			document.write('<hr>The actual script is in external file called "common.js"</hr>');
+			document.write('<br>The sum of headVar and bodyVar is' +sum(10,30));
+		</script>
+	</body>
+</html>
+
+

@@ -1,0 +1,31 @@
+
+<html>
+	<head>
+		<title>Store and display in Array</title>
+		<script>
+			function displayEmp(emp)
+			{
+				document.write("List of Employees");
+				document.write("<br>--------------------<br>")
+				for(var i=0;i<emp.length;i++)
+				{
+					document.write((i+1)+"."+emp[i]+"<br>");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			var emp= new Array();
+			
+			emp[0]="Tove";
+			emp[1]="Hege";
+			emp[2]="Stale"
+			emp[3]="Kai Jim"
+			emp[4]="Borge"
+			emp[5]="Jet"
+			
+			displayEmp(emp);
+		</script>
+	</body>
+</html>

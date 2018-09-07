@@ -1,0 +1,32 @@
+
+<html>
+	<head>
+		<title>Display date And time with greeting</title>
+		<script>
+			function disMsz()
+			{
+				var d=new Date();
+				var hrs=d.getHours();			
+				var greet;
+				if(hrs < 12)
+					greet='Good Morning'
+				else if(hrs >=12 && hrs <=17)
+					greet='Good Afternoon'
+				else if(hrs >=17 && hrs <=24)
+					greet='Good Evening'
+					
+				return greet;
+			}
+		</script>
+	</head>
+	<body>
+		
+		<script>
+			var d=new Date();
+			document.write(d);
+			var greet=disMsz();
+			document.write("<br></br>");
+			document.write(greet);
+		</script>
+	</body>
+</html>
