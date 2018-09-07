@@ -1,0 +1,13 @@
+
+.customDiv
+{
+	margin:10px;
+	min-height:200px;
+	background-color:lightblue;
+	text-align:center;
+	font-size:large;
+}
+.breadcrumb >li + li:before
+{
+	content:"|\00a0";
+}
